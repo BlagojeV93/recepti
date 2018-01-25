@@ -3,12 +3,27 @@
         <button class="btn btn-success">Novi recept</button>
     </div>
 </div>
+<hr>
 <div class="row">
     <div class="col-12">
-        <a href="#">
-            <div class=""></div>
-        </a>
-        <app-recipe-item></app-recipe-item>
+       
+            <a href="#" class="list-group-item clearfix" *ngFor="let recepti of recipes">
+                <div class="float-left">
+                    <h4 class="list-group-item-info">{{recepti.name}}</h4>
+                    <p>{{recepti.description}}
+                    </p>
+
+                </div>
+
+                <span class="float-right">
+                    <img [src]="recepti.imagePath" alt="{{recepti.name}}" class="embed-responsive rlist-img">
+                </span>
+
+            </a>
+        
+            <app-recipe-item></app-recipe-item>
+       
+
+
     </div>
 </div>
-

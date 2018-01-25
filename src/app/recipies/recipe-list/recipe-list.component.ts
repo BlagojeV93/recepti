@@ -9,7 +9,7 @@ import { Recipe } from '../recipe-model';
 export class RecipeListComponent implements OnInit {
 
   recipes: Recipe[] = [
-    new Recipe('Princes krofne', 'Slatko u kurac', 'https://coolinarika.azureedge.net/images/_variations/0/1/01dc7f25b11472d661ecfa8670254af1_header.jpg')
+    new Recipe('Princes krofne', 'Slatko u kurac', 'http://www.recepti.com/img/recipe/31430-vocne-princes-krofne_zoom.jpg')
   ]
 
   constructor() { }
