@@ -1,5 +1,13 @@
 <div class="row lala">
-<div class="col-md-5">  <app-recipe-list></app-recipe-list></div>
-<div class="col-md-7">  <app-recipe-detail></app-recipe-detail></div>
+    <div class="col-md-5">
+        <app-recipe-list (recipeSelected2)=" MainSelectedRecipe = $event"></app-recipe-list>
+    </div>
+    <div class="col-md-7">
+        <app-recipe-detail *ngIf="MainSelectedRecipe; else infoText"
+        [recipe]="MainSelectedRecipe"></app-recipe-detail>
+        <ng-template #infoText>
+            <p>Selektuj Recepat!</p>
+        </ng-template>
+    </div>
 
 </div>

@@ -3,3 +3,12 @@ nav {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.headerRecipies {
+    padding-right: 10px;
+}
+
+a:not(:first-child) {
+    font-weight: bold;
+    color: red;
+}

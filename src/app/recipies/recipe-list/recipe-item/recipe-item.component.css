@@ -1,0 +1,16 @@
+.rlist-img {
+    max-height: 70px;
+}
+
+.ceoLink {
+    justify-content: space-around;
+}
+
+span {
+    width: 40%;
+    float: right;
+}
+
+a:hover {
+    background: rgb(231, 227, 227);
+}

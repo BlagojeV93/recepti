@@ -1,12 +1,3 @@
-.rlist-img {
-    max-height: 70px;
-}
-
-.ceoLink {
-    justify-content: space-around;
-}
-
-span {
-    width: 40%;
-    float: right;
+.singleRecipe {
+    margin: 0 auto;
 }

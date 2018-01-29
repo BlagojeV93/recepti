@@ -4,27 +4,11 @@
     </div>
 </div>
 <hr>
-<div class="row">
-    <div class="col-12">
-       
-            <a href="#" class="list-group-item clearfix" *ngFor="let recepti of recipes">
-                 <div class="ceoLink row">
-                <div>
-                    <h4 class="list-group-item-info">{{recepti.name}}</h4>
-                    <p>{{recepti.description}}
-                    </p>
-
-                </div>
-
-                <span>
-                    <img [src]="recepti.imagePath" alt="{{recepti.name}}" class="embed-responsive rlist-img">
-                </span>
-            </div>
-            </a>
-        
-            <app-recipe-item></app-recipe-item>
-       
-
-
+<div class="col-10 singleRecipe">
+    <div class="row">
+        <app-recipe-item *ngFor="let receptiStavka of recipes" 
+        [recepti]="receptiStavka" 
+        (recipeSelected)="onSelected2(receptiStavka)"
+        ></app-recipe-item>
     </div>
 </div>

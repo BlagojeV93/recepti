@@ -1,3 +1,14 @@
-<p>
-  recipe-item works!
-</p>
+<a href="#" class="list-group-item clearfix" (click)="onSelected()">
+  <div class="ceoLink row">
+    <div>
+      <h4 class="list-group-item-action">{{recepti.name}}</h4>
+      <p>{{recepti.description}}
+      </p>
+
+    </div>
+
+    <span>
+      <img [src]="recepti.imagePath" alt="{{recepti.name}}" class="embed-responsive rlist-img">
+    </span>
+  </div>
+</a>
