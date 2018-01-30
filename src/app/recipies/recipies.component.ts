@@ -8,7 +8,7 @@ import { Recipe } from './recipe-model';
 })
 export class RecipiesComponent implements OnInit {
 
-  MainSelectedRecipe = Recipe;
+  MainSelectedRecipe : Recipe;
   
   constructor() { }
 
