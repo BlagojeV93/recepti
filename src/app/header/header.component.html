@@ -6,18 +6,21 @@
         <a href="#" class="headerRecipies" (click)="onSelectedData('recipe')">Recipies</a>
         <a href="#" (click)="onSelectedData('shopping-list')">Shopping list</a>
     </div>
-    <div>
-        <a href="#" class="dropdown-toggle" role="button">Manage</a>
-        <ul class="dropdown-menu">
-            <li>
-                <a href="#">Serving Data</a>
-            </li>
-            <li>
-                <a href="#">Fetching Data</a>
-            </li>
-        </ul>
 
+    <div class="btn-group headerDropDown">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Manage
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Serving Data</a>
+          <a class="dropdown-item" href="#">Fetching Data</a>
+         
+        </div>
+      </div>
+      
 
-    </div>
-
+   
 </nav>
+
+
+  

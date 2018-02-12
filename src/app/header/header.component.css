@@ -8,7 +8,7 @@ nav {
     padding-right: 10px;
 }
 
-a:not(:first-child) {
-    font-weight: bold;
-    color: red;
+.headerDropDown {
+    margin-right: 60px;
+    margin-top: 10px;
 }

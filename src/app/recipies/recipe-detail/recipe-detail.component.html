@@ -5,22 +5,24 @@
 </div>
 <div class="row">
   <div class="col-12">
-    <h1>{{recipe.name}}</h1>
+    <h1 appDropdown>{{recipe.name}}</h1>
   </div>
 </div>
 <div class="row">
   <div class="col-12">
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle">Upravljaj receptima</button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Dodaj u korpu</a></li>
-        <li><a href="#">Izmeni recept</a></li>
-        <li><a href="#">Obrisi recept</a></li>
-      </ul>
+    <div class="dropdown show">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Upravljaj receptima
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Dodaj u korpu</a>
+        <a class="dropdown-item" href="#">Izmeni recept</a>
+        <a class="dropdown-item" href="#">Obrisi recept</a>
+      </div>
     </div>
   </div>
 </div>
-<div class="row">
+<div class="row textBeneathDropDown">
   <div class="col-12">
     {{recipe.description}}
   </div>
