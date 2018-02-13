@@ -6,3 +6,11 @@
 .textBeneathDropDown {
     margin-top: 5px;
 }
+
+.row .list-group {
+    margin-top: 10px;
+}
+
+.dodajLink {
+    cursor: pointer;
+}

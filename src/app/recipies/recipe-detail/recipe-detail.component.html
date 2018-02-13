@@ -15,7 +15,7 @@
         Upravljaj receptima
       </a>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">Dodaj u korpu</a>
+        <a class="dropdown-item dodajLink" (click)="onAddIngredients()">Dodaj u korpu</a>
         <a class="dropdown-item" href="#">Izmeni recept</a>
         <a class="dropdown-item" href="#">Obrisi recept</a>
       </div>
@@ -28,8 +28,12 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-12">
-    SASTOJCI
+  <div class="col-6">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor = "let sastojak of recipe.ingredients">
+        {{sastojak.name}} - {{sastojak.amount}}
+      </li>
+    </ul>
   </div>
 </div>
 
