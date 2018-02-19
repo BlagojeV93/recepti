@@ -14,3 +14,7 @@
 .dodajLink {
     cursor: pointer;
 }
+
+.dropdown-menu a {
+    cursor: pointer;
+}

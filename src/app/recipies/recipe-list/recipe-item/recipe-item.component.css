@@ -14,3 +14,7 @@ span {
 a:hover {
     background: rgb(231, 227, 227);
 }
+
+a {
+    cursor: pointer;
+}

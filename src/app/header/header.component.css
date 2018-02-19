@@ -4,11 +4,40 @@ nav {
     justify-content: space-between;
 }
 
-.headerRecipies {
-    padding-right: 10px;
-}
-
 .headerDropDown {
     margin-right: 60px;
     margin-top: 10px;
+    height: 60%;
 }
+
+.listLinksHeader {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.listLinksHeader li {
+    margin-right: 30px;
+}
+
+.listLinksHeader li a{
+    text-decoration: none;
+}
+
+.activeLink {
+    margin-top: 5px;
+    background: deepskyblue;
+    color: white;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.activeLink a {
+    color: black;
+}
+
+.dropdown-menu a {
+    cursor: pointer;
+}
+
