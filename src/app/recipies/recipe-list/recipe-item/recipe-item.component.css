@@ -18,3 +18,7 @@ a:hover {
 a {
     cursor: pointer;
 }
+
+.activeCard {
+    background: lightblue;
+}
